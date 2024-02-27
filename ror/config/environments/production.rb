@@ -10,7 +10,7 @@ Rails.application.configure do
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
   # Rake tasks automatically ignore this option for performance.
-  config.eager_load = true
+  config.eager_load = false
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local = false
@@ -52,7 +52,7 @@ Rails.application.configure do
   # Prepend all log lines with the following tags.
   config.log_tags = [ :request_id ]
 
-  # "info" includes generic and useful information about system operation, but avoids logging too much
+  # Info include generic and useful information about system operation, but avoids logging too much
   # information to avoid inadvertent exposure of personally identifiable information (PII). If you
   # want to log everything, set the level to "debug".
   config.log_level = ENV.fetch("RAILS_LOG_LEVEL", "info")
@@ -62,7 +62,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter = :resque
-  # config.active_job.queue_name_prefix = "ror_production"
+  # config.active_job.queue_name_prefix = "book_an_appointment_production"
 
   config.action_mailer.perform_caching = false
 
@@ -73,6 +73,23 @@ Rails.application.configure do
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
+  
+  
+  
+  # Configuration for ActionMailer using SendGrid
+  
+  # config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.smtp_settings = {
+  #address: 'smtp.sendgrid.net',
+  #port: 587,
+  #domain: 'your-production-domain.com',
+  #user_name: ENV['SENDGRID_USERNAME'], #use apikey
+  #password: ENV['SENDGRID_PASSWORD'],
+  #authentication: :plain,
+  #enable_starttls_auto: true,
+#}
+
+
 
   # Don't log any deprecations.
   config.active_support.report_deprecations = false
@@ -87,4 +104,6 @@ Rails.application.configure do
   # ]
   # Skip DNS rebinding protection for the default health check endpoint.
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
+  
+
 end
