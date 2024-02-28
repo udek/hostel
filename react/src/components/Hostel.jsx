@@ -55,11 +55,11 @@ const Hostel = () => {
      
       <div className="table-fee">
         <div>
-          <span>Finance Fee:</span>
+          <span>Rent Fee:</span>
           <span>&#x20A6;{n.finance_fee}</span>
         </div>
         <div>
-          <span>Option to Purchase Fee:</span>
+          <span>Aggrement Fee:</span>
           <span>&#x20A6;{n.option_to_purchase_fee}</span>
         </div>
         <div>
