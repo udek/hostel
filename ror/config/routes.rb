@@ -52,7 +52,7 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  root "api/v1/pages#index"
+  root "api/v1/pages#items"
   
 
   # config/routes.rb
