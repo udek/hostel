@@ -1,0 +1,218 @@
+:root {
+  --green: #98bf11;
+  --primary: #707070;
+  --header-main: 20rem;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+main dev {
+  width: 100vw;
+}
+
+.p-title {
+  margin-bottom: 44px;
+  text-align: center;
+  font-weight: 600;
+  width: 100%;
+}
+
+.p-title h2 {
+  font-size: 1.5rem;
+  color: #777;
+}
+
+.p-title h3 {
+  font-size: 1rem;
+  color: #a39c9c;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  main {
+    padding-left: 250px;
+  }
+
+  main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  main div {
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+  
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  main {
+    padding-left: 300px;
+  }
+
+  .p-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #98bf11;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+
+ main {
+    padding-left: 0;
+    margin-top: 60px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+  }
+}
+
+.sidebar {
+  color: #777;
+  padding: 20px;
+  height: 80vmax;
+}
+
+.drop-menu {
+  margin-top: 10px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-list {
+  margin-bottom: 10px;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: #777;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.menu-list a:hover {
+  color: #ccc;
+  background-color: #85a10e;
+}
+
+.menu-list a:active {
+  font-weight: bold;
+  color: #fff;
+  background-color: #85a10e;
+}
+
+.log-out-btn {
+  background-color: transparent;
+  border: 1px solid #333;
+  color: #777;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.log-out-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.campaign {
+  display: block;
+  margin-top: 20px;
+}
+
+.campaign a {
+  text-decoration: none;
+  color: #333;
+}
+
+.campaign a:hover {
+  text-decoration: underline;
+}
+
+.card-item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reserve-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1002;
+  background-color: #98bf11;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
